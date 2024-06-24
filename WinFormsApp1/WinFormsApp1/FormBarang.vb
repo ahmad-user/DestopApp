@@ -127,4 +127,26 @@ Public Class FormBarang
     Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
         Call filterGrid()
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Call koneksi()
+        cmd = New OdbcCommand("select * from tbl_barang where kode_barang =?", conn)
+        cmd.Parameters.AddWithValue("kode_barang", TextBox1.Text)
+        Dim dr As OdbcDataReader
+        dr = cmd.ExecuteReader
+
+        If dr.Read Then
+            TextBox2.Text = dr("nama_barang").ToString
+            TextBox3.Text = dr("harga_barang").ToString
+            TextBox4.Text = dr("jumlah_barang").ToString
+            TextBox5.Text = dr("expired_barang").ToString
+            TextBox6.Text = dr("gudang_id").ToString
+        Else
+            TextBox2.Text = ""
+            TextBox3.Text = ""
+            TextBox4.Text = ""
+            TextBox5.Text = ""
+            TextBox6.Text = ""
+        End If
+    End Sub
 End Class

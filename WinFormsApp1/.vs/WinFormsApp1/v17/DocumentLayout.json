@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\afadi\\source\\repos\\winformsapp1\\winformsapp1\\formmenuutama.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\formmenuutama.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\afadi\\source\\repos\\winformsapp1\\winformsapp1\\formbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\formbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\afadi\\source\\repos\\winformsapp1\\winformsapp1\\winformsapp1.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\winformsapp1.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\afadi\\source\\repos\\winformsapp1\\winformsapp1\\formbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\formbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\afadi\\source\\repos\\winformsapp1\\winformsapp1\\formgudang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\formgudang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\afadi\\source\\repos\\winformsapp1\\winformsapp1\\formgudang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{23289A0F-13F4-4CF9-805E-817217C66201}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\formgudang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WinFormsApp1",
-              "DocumentMoniker": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.vbproj",
-              "RelativeDocumentMoniker": "WinFormsApp1\\WinFormsApp1.vbproj",
-              "ToolTip": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.vbproj",
-              "RelativeToolTip": "WinFormsApp1\\WinFormsApp1.vbproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
-              "WhenOpened": "2024-06-23T08:39:04.931Z",
+              "DocumentIndex": 3,
+              "Title": "FormGudang.vb",
+              "DocumentMoniker": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormGudang.vb",
+              "RelativeDocumentMoniker": "WinFormsApp1\\FormGudang.vb",
+              "ToolTip": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormGudang.vb",
+              "RelativeToolTip": "WinFormsApp1\\FormGudang.vb",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-24T13:20:58.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormMenuUtama.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormMenuUtama.vb",
-              "RelativeDocumentMoniker": "WinFormsApp1\\FormMenuUtama.vb",
-              "ToolTip": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormMenuUtama.vb [Design]",
-              "RelativeToolTip": "WinFormsApp1\\FormMenuUtama.vb [Design]",
+              "DocumentIndex": 2,
+              "Title": "FormGudang.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormGudang.vb",
+              "RelativeDocumentMoniker": "WinFormsApp1\\FormGudang.vb",
+              "ToolTip": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormGudang.vb [Design]",
+              "RelativeToolTip": "WinFormsApp1\\FormGudang.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-23T08:36:27.592Z",
+              "WhenOpened": "2024-06-24T13:20:42.38Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormBarang.vb",
+              "DocumentMoniker": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormBarang.vb",
+              "RelativeDocumentMoniker": "WinFormsApp1\\FormBarang.vb",
+              "ToolTip": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormBarang.vb",
+              "RelativeToolTip": "WinFormsApp1\\FormBarang.vb",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAAI8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-24T13:11:54.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormBarang.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormBarang.vb",
+              "RelativeDocumentMoniker": "WinFormsApp1\\FormBarang.vb",
+              "ToolTip": "C:\\Users\\afadi\\source\\repos\\WinFormsApp1\\WinFormsApp1\\FormBarang.vb [Design]",
+              "RelativeToolTip": "WinFormsApp1\\FormBarang.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-24T13:11:16.968Z",
               "EditorCaption": " [Design]"
             }
           ]

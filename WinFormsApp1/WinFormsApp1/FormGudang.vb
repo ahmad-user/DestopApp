@@ -117,4 +117,21 @@ Public Class FormGudang
     Private Sub tCari_TextChanged(sender As Object, e As EventArgs) Handles tCari.TextChanged
         Call filterGrid()
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Call koneksi()
+        cmd = New OdbcCommand("select * from tbl_gudang where kode_gudang =?", conn)
+        cmd.Parameters.AddWithValue("kode_gudang", TextBox1.Text)
+        Dim dr As OdbcDataReader
+        dr = cmd.ExecuteReader
+
+        If dr.Read Then
+            TextBox2.Text = dr("nama_gudang").ToString
+            TextBox3.Text = dr("alamat").ToString
+        Else
+            TextBox2.Text = ""
+            TextBox3.Text = ""
+        End If
+    End Sub
+
 End Class
