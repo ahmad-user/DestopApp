@@ -27,6 +27,7 @@ Partial Class FormMenuUtama
         MenuStrip1 = New MenuStrip()
         FileToolStripMenuItem = New ToolStripMenuItem()
         MasterToolStripMenuItem = New ToolStripMenuItem()
+        LaporanToolStripMenuItem = New ToolStripMenuItem()
         ToolStrip1 = New ToolStrip()
         ToolStripSplitButton1 = New ToolStripSplitButton()
         LoginToolStripMenuItem = New ToolStripMenuItem()
@@ -34,9 +35,13 @@ Partial Class FormMenuUtama
         ToolStripSplitButton2 = New ToolStripSplitButton()
         DataGudangToolStripMenuItem1 = New ToolStripMenuItem()
         DataBarangToolStripMenuItem2 = New ToolStripMenuItem()
+        ToolStripDropDownButton1 = New ToolStripDropDownButton()
+        LaporanGudangToolStripMenuItem = New ToolStripMenuItem()
+        LaporanBarangToolStripMenuItem = New ToolStripMenuItem()
         StatusStrip1 = New StatusStrip()
         ToolStripStatusLabel1 = New ToolStripStatusLabel()
         sbtanggal = New ToolStripStatusLabel()
+        PrintDocument1 = New Printing.PrintDocument()
         MenuStrip1.SuspendLayout()
         ToolStrip1.SuspendLayout()
         StatusStrip1.SuspendLayout()
@@ -53,7 +58,7 @@ Partial Class FormMenuUtama
         ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.Items.AddRange(New ToolStripItem() {FileToolStripMenuItem, MasterToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {FileToolStripMenuItem, MasterToolStripMenuItem, LaporanToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(800, 24)
@@ -72,9 +77,15 @@ Partial Class FormMenuUtama
         MasterToolStripMenuItem.Size = New Size(55, 20)
         MasterToolStripMenuItem.Text = "Master"
         ' 
+        ' LaporanToolStripMenuItem
+        ' 
+        LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
+        LaporanToolStripMenuItem.Size = New Size(62, 20)
+        LaporanToolStripMenuItem.Text = "Laporan"
+        ' 
         ' ToolStrip1
         ' 
-        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripSplitButton1, ToolStripSplitButton2})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripSplitButton1, ToolStripSplitButton2, ToolStripDropDownButton1})
         ToolStrip1.Location = New Point(0, 24)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(800, 49)
@@ -97,14 +108,14 @@ Partial Class FormMenuUtama
         LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), Image)
         LoginToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None
         LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        LoginToolStripMenuItem.Size = New Size(194, 36)
+        LoginToolStripMenuItem.Size = New Size(126, 36)
         LoginToolStripMenuItem.Text = "Login"
         ' 
         ' LogoutToolStripMenuItem
         ' 
         LogoutToolStripMenuItem.Image = CType(resources.GetObject("LogoutToolStripMenuItem.Image"), Image)
         LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        LogoutToolStripMenuItem.Size = New Size(194, 36)
+        LogoutToolStripMenuItem.Size = New Size(126, 36)
         LogoutToolStripMenuItem.Text = "Logout"
         ' 
         ' ToolStripSplitButton2
@@ -123,7 +134,7 @@ Partial Class FormMenuUtama
         DataGudangToolStripMenuItem1.Image = CType(resources.GetObject("DataGudangToolStripMenuItem1.Image"), Image)
         DataGudangToolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None
         DataGudangToolStripMenuItem1.Name = "DataGudangToolStripMenuItem1"
-        DataGudangToolStripMenuItem1.Size = New Size(199, 42)
+        DataGudangToolStripMenuItem1.Size = New Size(162, 42)
         DataGudangToolStripMenuItem1.Text = "Data Gudang"
         ' 
         ' DataBarangToolStripMenuItem2
@@ -131,8 +142,35 @@ Partial Class FormMenuUtama
         DataBarangToolStripMenuItem2.Image = CType(resources.GetObject("DataBarangToolStripMenuItem2.Image"), Image)
         DataBarangToolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None
         DataBarangToolStripMenuItem2.Name = "DataBarangToolStripMenuItem2"
-        DataBarangToolStripMenuItem2.Size = New Size(199, 42)
+        DataBarangToolStripMenuItem2.Size = New Size(162, 42)
         DataBarangToolStripMenuItem2.Text = "Data Barang"
+        ' 
+        ' ToolStripDropDownButton1
+        ' 
+        ToolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
+        ToolStripDropDownButton1.DropDownItems.AddRange(New ToolStripItem() {LaporanGudangToolStripMenuItem, LaporanBarangToolStripMenuItem})
+        ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), Image)
+        ToolStripDropDownButton1.ImageScaling = ToolStripItemImageScaling.None
+        ToolStripDropDownButton1.ImageTransparentColor = Color.Magenta
+        ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        ToolStripDropDownButton1.Size = New Size(53, 46)
+        ToolStripDropDownButton1.Text = "ToolStripDropDownButton1"
+        ' 
+        ' LaporanGudangToolStripMenuItem
+        ' 
+        LaporanGudangToolStripMenuItem.Image = CType(resources.GetObject("LaporanGudangToolStripMenuItem.Image"), Image)
+        LaporanGudangToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None
+        LaporanGudangToolStripMenuItem.Name = "LaporanGudangToolStripMenuItem"
+        LaporanGudangToolStripMenuItem.Size = New Size(199, 42)
+        LaporanGudangToolStripMenuItem.Text = "Laporan Gudang"
+        ' 
+        ' LaporanBarangToolStripMenuItem
+        ' 
+        LaporanBarangToolStripMenuItem.Image = CType(resources.GetObject("LaporanBarangToolStripMenuItem.Image"), Image)
+        LaporanBarangToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None
+        LaporanBarangToolStripMenuItem.Name = "LaporanBarangToolStripMenuItem"
+        LaporanBarangToolStripMenuItem.Size = New Size(199, 42)
+        LaporanBarangToolStripMenuItem.Text = "Laporan Barang"
         ' 
         ' StatusStrip1
         ' 
@@ -154,6 +192,9 @@ Partial Class FormMenuUtama
         sbtanggal.Name = "sbtanggal"
         sbtanggal.Size = New Size(10, 17)
         sbtanggal.Text = "I"
+        ' 
+        ' PrintDocument1
+        ' 
         ' 
         ' FormMenuUtama
         ' 
@@ -196,4 +237,9 @@ Partial Class FormMenuUtama
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents sbtanggal As ToolStripStatusLabel
+    Friend WithEvents LaporanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
+    Friend WithEvents LaporanGudangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LaporanBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class
